@@ -1,0 +1,29 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {"sourceType": "module"},
+    "extends": "airbnb",
+    "plugins": ["react"],
+
+    "rules": {
+        "arrow-parens": ["error", "as-needed"],
+        "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+        "import/extensions": ["error", {"jsx": "always"}],
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "consistent-return": "off",
+        "comma-dangle": ["error", "never"],
+        "linebreak-style": ["off"],
+        "jsx-a11y/no-static-element-interactions": ["off"],
+        "no-shadow": ["warn"],
+        "no-use-before-define": ["warn"],
+        "object-curly-spacing": ["error", "always"],
+        "new-cap": ["error", { "capIsNew": false }],
+        "no-underscore-dangle": ["error", {"allow": ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"]}],
+        "no-var": 2,
+        "react/jsx-indent": ["warn", 4],
+        "react/jsx-indent-props": ["warn", 4],
+        "react/prefer-stateless-function": ["off"],
+        "react/forbid-prop-types": ["warn", {"forbid": ["any"]}],
+        "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}]
+    }
+}
